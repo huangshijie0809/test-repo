@@ -74,7 +74,7 @@ git push origin main
 
 
 # =======================
-idea 打开 这是我第一次使用 Git + GitHub。
+# idea 打开 这是我第一次使用 Git + GitHub。
 
 
 
