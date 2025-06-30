@@ -47,3 +47,29 @@ git push -u origin main
 
 # 后续推送只需：
 git push  
+
+
+
+
+
+# =======================
+
+# 后续获取更新的内容（下次 git pull 前建议先提交或暂存：）
+git stash        #临时保存未提交的修改  
+git pull         #拉取更新  
+git stash pop    #恢复修改（如有冲突需手动解决）  
+
+
+# 运行 git log 查看详细的提交历史
+git log --oneline  # 简洁版提交记录（只显示哈希和提交信息）  
+git log # 完整历史记录  
+# 想撤销这次更新？（回退到 git pull 前的状态）
+git reset --hard cbe7b28  # 用你的旧提交哈希替换  
+
+#  其他获取哈希值的方式
+git reflog #即使回退了代码，仍可通过此命令找回“丢失”的提交  
+
+# 运行 git status 确认工作区是否干净。(如果需要推送本地新提交到 GitHub)
+git push origin main  
+
+
